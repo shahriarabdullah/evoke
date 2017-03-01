@@ -50,7 +50,7 @@ def process_data(recevied_response,pnumber):
 			s_index=e_index
 			while recevied_response[s_index]!="/":
 				s_index=s_index-1
-			#print recevied_response[s_index:e_index] #printing username end end
+			#print recevied_response[s_index:e_index] #printing username end
 			towrite="0"+pnumber+","+final_name+",http://facebook.com"+recevied_response[s_index:e_index]+",N/A,N/A,N/A,"+str(date)
 			print towrite
 			f.write(str(towrite)+'\n')
